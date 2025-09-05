@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -12,11 +12,10 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="bg-[#1e293b] text-gray-300">
-      
-
       {/* Main Footer Content */}
       <div className="py-12 px-4 md:px-8">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Uptoskills Links */}
           <div>
             <h4 className="font-semibold text-lg mb-4 text-white">Uptoskills</h4>
             <ul className="text-sm space-y-2">
@@ -49,6 +48,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Programs */}
           <div>
             <h4 className="font-semibold text-lg mb-4 text-white">Programs</h4>
             <ul className="text-sm space-y-2">
@@ -81,6 +82,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Resources */}
           <div>
             <h4 className="font-semibold text-lg mb-4 text-white">Resources</h4>
             <ul className="text-sm space-y-2">
@@ -96,7 +99,6 @@ const Footer = () => {
               <li>
                 <HashLink 
                   to="" 
-                  scroll={el => scrollWithOffset(el)}
                   className="hover:text-yellow-300 transition duration-300"
                 >
                   Community
@@ -105,7 +107,6 @@ const Footer = () => {
               <li>
                 <HashLink 
                   to="" 
-                  scroll={el => scrollWithOffset(el)}
                   className="hover:text-yellow-300 transition duration-300"
                 >
                   Contact
@@ -113,50 +114,57 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Get in Touch */}
           <div>
             <h4 className="font-semibold text-lg mb-4 text-white">Get in Touch</h4>
             <div className="space-y-4">
+              {/* Social Media Links */}
               <div className="flex space-x-4 mb-4">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300">
-                  <i className="fab fa-facebook text-xl"></i>
+                  <FaFacebook className="text-xl" />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300">
-                  <i className="fab fa-twitter text-xl"></i>
+                  <FaTwitter className="text-xl" />
                 </a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300">
-                  <i className="fab fa-linkedin text-xl"></i>
+                  <FaLinkedin className="text-xl" />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300">
-                  <i className="fab fa-instagram text-xl"></i>
+                  <FaInstagram className="text-xl" />
                 </a>
               </div>
+
+              {/* Newsletter */}
               <div>
                 <h4 className="font-semibold text-lg mb-2 text-white">Newsletter</h4>
                 <div className="flex">
                   <input 
                     type="email" 
                     placeholder="Enter your email" 
-                    className="w-full px-4 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-2 rounded-l-md text-gray-800 focus:outline-none text-sm"
                   />
-                  <button className="bg-green-600 text-white px-4 py-2 rounded-r-md hover:bg-green-700 text-sm">
+                  <button className="bg-green-600 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-r-md hover:bg-green-700 text-sm">
                     Subscribe
                   </button>
                 </div>
               </div>
+
+              {/* Contact Form */}
               <div>
                 <h4 className="font-semibold text-lg mb-2 text-white">Contact Us</h4>
                 <div className="space-y-2">
                   <input 
                     type="text" 
                     placeholder="Your Name" 
-                    className="w-full px-4 py-2 rounded-md text-gray-800 focus:outline-none text-sm"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-2 rounded-md text-gray-800 focus:outline-none text-sm"
                   />
                   <input 
                     type="email" 
                     placeholder="Your Email" 
-                    className="w-full px-4 py-2 rounded-md text-gray-800 focus:outline-none text-sm"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-2 rounded-md text-gray-800 focus:outline-none text-sm"
                   />
-                  <button className="bg-green-600 text-white w-full px-4 py-2 rounded-md hover:bg-green-700 text-sm">
+                  <button className="bg-green-600 text-white w-full px-3 py-2 sm:px-4 sm:py-2 rounded-md hover:bg-green-700 text-sm">
                     Send Message
                   </button>
                 </div>
